@@ -1,0 +1,21 @@
+Training:
+python3 train.py --img 320 --batch 16 --epochs 300 --data coco128.yaml --cfg yolov5s.yaml --weights yolov5s.pt --cache-images
+
+Continue Training Detector from Checkpoint:
+python3 train.py --weights /runs/exp1/weights/last.pt --data coco128.yaml --cfg yolov5s.yaml --batch 16 --epochs 300 --img 320 --cache-images
+
+train.py options:
+	- img: size of the input image in pixels
+	- batch: batch size of images at once
+	- epochs: number of epochs
+	- data: YAML file, no need to change
+	- cfg: YOLO model selection YAML file. I have chosen “s” for this tutorial.
+	- weights: weights file to train with
+	- device: to select the training device, “0” for GPU, and “cpu” for CPU.
+    
+
+Detection:
+python3 detect.py --weights yolov5s.pt --img 416 --conf 0.85 --source inference/images/
+
+detect.py options:
+	- conf: minimum confidence of detector to "detect" that object
