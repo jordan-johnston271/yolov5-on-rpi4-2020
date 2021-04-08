@@ -3,6 +3,6 @@ YOLOv5 is an extremely powerful and flexible machine learning algorithm that is 
 
 The link below will lead you to the full tutorial, available for anyone from beginners to experts. This repository will be used in that tutorial to download my curated YOLOv5 files and other necessary Python libraries.
 
-### [YOLOV5 ON RPI TUTORIAL LINK](medium.com)
+### [YOLOV5 ON RPI TUTORIAL LINK](https://jordan-johnston271.medium.com/tutorial-running-yolov5-machine-learning-detection-on-a-raspberry-pi-4-3938add0f719)
 
 Please feel free to message me with questions or comments!
